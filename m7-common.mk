@@ -24,6 +24,16 @@ DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
+### Temp hax until build gets fixed ###
+PRODUCT_PACKAGES += \
+    BluetoothExt
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
+    $(LOCAL_PATH)/prebuilts/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so
+
+### End hax ###
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \

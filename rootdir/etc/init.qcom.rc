@@ -5,6 +5,8 @@ on early-init
     chown system system /sys/kernel/debug/kgsl/proc
 
 on init
+    export BOOTCLASSPATH ${BOOTCLASSPATH}:/system/framework/htcirlibs.jar
+
     mkdir /mnt/shell/emulated 0700 shell shell
     mkdir /storage/emulated 0555 root root
 
@@ -329,7 +331,7 @@ service akmd /system/bin/akmd
     user system
     group system misc input
 
-service cir_fw_update /system/bin/cir_fw_update -u cir.img
+service cir_fw_update /system/bin/cir_fw_update -u /system/etc/cir.img
     class main
     user root
     group root

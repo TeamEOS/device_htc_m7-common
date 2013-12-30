@@ -114,5 +114,22 @@ TARGET_USERIMAGES_USE_EXT4 := true
 # Charge mode
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/htc_lpm/lpm_mode
 
+# TWRP
+DEVICE_RESOLUTION := 1080x1920
+TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+BOARD_USE_CUSTOM_RECOVERY_FONT := \"roboto_23x41.h\"
+RECOVERY_GRAPHICS_USE_LINELENGTH := true
+TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
+TW_FLASH_FROM_STORAGE := true
+TW_INTERNAL_STORAGE_PATH := "/data/media"
+TW_INTERNAL_STORAGE_MOUNT_POINT := "data"
+TW_EXTERNAL_STORAGE_PATH := "/usb-otg"
+TW_EXTERNAL_STORAGE_MOUNT_POINT := "usb-otg"
+RECOVERY_SDCARD_ON_DATA := true
+BOARD_HAS_NO_REAL_SDCARD := true
+TW_INCLUDE_JB_CRYPTO := true
+TW_NO_USB_STORAGE := true
+BOARD_USE_TWRP_REBOOT_SYMBOL:= true
+
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk

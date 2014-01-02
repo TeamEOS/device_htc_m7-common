@@ -32,6 +32,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/prebuilts/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
     $(LOCAL_PATH)/prebuilts/lib/hw/camera.vendor.msm8960.so:system/lib/hw/camera.vendor.msm8960.so
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/prebuilts/media/bootanimation.zip:system/media/bootanimation.zip
+
 ### End hax ###
 
 # Ramdisk

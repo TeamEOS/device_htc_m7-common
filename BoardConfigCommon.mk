@@ -121,5 +121,8 @@ TW_INCLUDE_JB_CRYPTO := true
 TW_NO_USB_STORAGE := true
 BOARD_USE_TWRP_REBOOT_SYMBOL:= true
 
+# Qcom Opts
+BOARD_USES_LIBQC_OPT := true
+
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk

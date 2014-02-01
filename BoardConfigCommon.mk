@@ -121,8 +121,9 @@ TW_INCLUDE_JB_CRYPTO := true
 TW_NO_USB_STORAGE := true
 BOARD_USE_TWRP_REBOOT_SYMBOL:= true
 
-# Qcom Opts
+# CFX and QCOM Optimization
 BOARD_USES_LIBQC_OPT := true
+ARCH_ARM_HIGH_OPTIMIZATION := true
 
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk

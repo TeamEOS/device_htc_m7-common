@@ -368,11 +368,11 @@ service qmuxd /system/bin/qmuxd
     user radio
     group radio audio gps
 
-service thermald /system/bin/thermald
-    class main
-    user root
-    group root
-    disabled
+#service thermald /system/bin/thermald
+#    class main
+#    user root
+#    group root
+#    disabled
 
 # WiFi
 service p2p_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \

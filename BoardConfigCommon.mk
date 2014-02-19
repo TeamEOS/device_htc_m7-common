@@ -123,7 +123,7 @@ BOARD_USE_TWRP_REBOOT_SYMBOL:= true
 
 # CFX and QCOM Optimization
 BOARD_USES_LIBQC_OPT := true
-ARCH_ARM_HIGH_OPTIMIZATION := true
+ARCH_ARM_HIGH_OPTIMIZATION_COMPAT := true
 
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk

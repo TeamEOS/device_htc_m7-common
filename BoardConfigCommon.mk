@@ -36,7 +36,7 @@ BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.hardware=qcom user
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset 0x01800000
 TARGET_KERNEL_CONFIG := m7_defconfig
 TARGET_KERNEL_SOURCE := kernel/htc/msm8960
-TARGET_ARM_EABI_VERSION := 4.8
+#TARGET_ARM_EABI_VERSION := 4.8
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only
@@ -121,9 +121,9 @@ TW_INCLUDE_JB_CRYPTO := true
 TW_NO_USB_STORAGE := true
 BOARD_USE_TWRP_REBOOT_SYMBOL:= true
 
-# CFX and QCOM Optimization
+# EOS and QCOM Optimization
 BOARD_USES_LIBQC_OPT := true
-ARCH_ARM_HIGH_OPTIMIZATION_COMPAT := true
+#ARCH_ARM_HIGH_OPTIMIZATION_COMPAT := true
 
 # inherit from the proprietary version
 -include vendor/htc/m7-common/BoardConfigVendor.mk

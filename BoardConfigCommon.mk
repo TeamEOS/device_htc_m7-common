@@ -40,7 +40,7 @@ TARGET_KERNEL_SOURCE := kernel/htc/msm8960
 # Build and optimization
 BOARD_USES_LIBQC_OPT := true
 #TARGET_GCC_VERSION_EXP := 4.8-linaro
-TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.8-linaro
+TARGET_KERNEL_CUSTOM_TOOLCHAIN := 4.9-linaro-a15
 
 # Audio
 BOARD_USES_FLUENCE_INCALL := true  # use DMIC in call only

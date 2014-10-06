@@ -367,6 +367,11 @@ service qmuxd /system/bin/qmuxd
 #    group root
 #    disabled
 
+service qseecomd /system/bin/qseecomd
+    class main
+    user system
+    group system drm
+
 # WiFi
 service p2p_supplicant /system/bin/logwrapper /system/bin/wpa_supplicant \
     -iwlan0 -Dnl80211 -c/data/misc/wifi/wpa_supplicant.conf \

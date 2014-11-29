@@ -126,6 +126,17 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     ueventd.qcom.rc
 
+# HTC IR Blaster resources
+PRODUCT_PACKAGES += \
+    CIRModule \
+    htcirlibs \
+    cir \
+    cir_fw_update \
+    libhtcirinterface_jni
+
+PRODUCT_BOOT_JARS += \
+    htcirlibs
+
 # Thermal
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald.conf:system/etc/thermald.conf

@@ -327,7 +327,7 @@ service akmd /system/bin/akmd
     user system
     group system misc input
 
-service cir_fw_update /system/bin/cir_fw_update -u cir.img
+service cir_fw_update /system/bin/cir_fw_update -u /system/etc/cir.img
     class main
     user root
     group root

@@ -141,10 +141,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermald.conf:system/etc/thermald.conf
 
-# Torch
-PRODUCT_PACKAGES += \
-    Torch
-
 # WiFi
 PRODUCT_PACKAGES += \
     libnetcmdiface
